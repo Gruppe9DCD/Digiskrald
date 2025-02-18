@@ -2,32 +2,51 @@
 import { Image } from 'astro:assets';
 import facebook from "../assets/images/facebook.svg";
 import instagram from "../assets/images/instagram.svg";
-import ind from "../assets/images/in.svg";
+import ind from "../assets/images/ind.svg";
 import tiktok from "../assets/images/tiktok.svg";
 import x from "../assets/images/x.svg";
 import youtube from "../assets/images/youtube.svg";
+import logo from "../assets/images/logo.svg";
 ---
-<div class="py-8 max-w-screen-xl mx-auto text-white">
+<div class="py-8 max-w-screen-xl mx-auto text-white bg-amber-400">
     <div class="grid grid-cols-3 justify-items-center pb-8">
         <div>
-				<Image src={facebook} alt="facebook logo" class=""/>
+				  <Image src={facebook} alt="facebook logo" class=""/>
         </div>
        <div>
-				<Image src={instagram} alt="instagram logo" class=""/>
+				  <Image src={instagram} alt="instagram logo" class=""/>
         </div>
         <div>
-				<Image src={ind} alt="linkedin logo" class=""/>
+				  <Image src={ind} alt="linkedin logo" class=""/>
         </div>
         <div>
-				<Image src={tiktok} alt="tiktok logo" class=""/>
+				  <Image src={tiktok} alt="tiktok logo" class=""/>
         </div>
         <div>
-				<Image src={x} alt="x logo" class=""/>
+				  <Image src={x} alt="x logo" class=""/>
         </div>
         <div>
-				<Image src={youtube} alt="youtube logo" class=""/>
+				  <Image src={youtube} alt="youtube logo" class=""/>
         </div>
     </div>
+
+    <section>
+      <p>Let's Do It World NGO<br><br>Roosikrantsi 3, TALLINN 10119, Estonia<br>Reg. code - 80562203<br><br>digital@ldiw.org</p>
+    </section>
+
+    <section>
+      <a href="https://www.worldcleanupday.org/blog">Blog</a>
+      <a href="https://trello.com/b/YzROvY3M/digital-cleanup-day">Marketing Materials</a>
+      <a href="https://drive.google.com/file/d/1a0sgGo1n8edioZ4Itm6DNqTPlmKWGfTj/view">Constitution</a>
+      <a href="https://www.worldcleanupday.org/get-involved">Join The Movement</a>
+    </section>
+
+    <div>
+      <div>
+        	<Image src={logo} alt="digi logo" class=""/>
+      </div>
+    </div>
+
     <div class="flex justify-center">
         <p>copyright notice</p>
     </div>
