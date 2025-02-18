@@ -1,7 +1,15 @@
 ---
-
+import { Image } from "astro:assets";
+import digi_logo from "../assets/images/digi_logo.png";
 ---
 
-<div>
-  <h1>hej med dig ida virker du?</h1>
+<div class="bg-lime-950/70 grid grid-cols-4 gap-4 mx-10 rounded-3xl mt-10">
+  <div class="m-4"><Image src={digi_logo} alt="" /></div>
+  <div class="col-span-1"></div>
+  <div class="flex items-center py-8">
+    <a href="#" class="ml-80 text-lg font-bold text-lime-100">Hjem</a>
+  </div>
+  <div class="flex items-center py-8">
+    <a href="#" class="ml-50 text-lg font-bold text-lime-100">How Too</a>
+  </div>
 </div>
