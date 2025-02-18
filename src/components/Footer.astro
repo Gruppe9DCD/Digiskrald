@@ -1,6 +1,34 @@
 ---
+import { Image } from 'astro:assets';
+import facebook from "../assets/images/facebook.svg";
+import instagram from "../assets/images/instagram.svg";
+import ind from "../assets/images/in.svg";
+import tiktok from "../assets/images/tiktok.svg";
+import x from "../assets/images/x.svg";
+import youtube from "../assets/images/youtube.svg";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
+<div class="py-8 max-w-screen-xl mx-auto text-white">
+    <div class="grid grid-cols-3 justify-items-center pb-8">
+        <div>
+				<Image src={facebook} alt="facebook logo" class=""/>
+        </div>
+       <div>
+				<Image src={instagram} alt="instagram logo" class=""/>
+        </div>
+        <div>
+				<Image src={ind} alt="linkedin logo" class=""/>
+        </div>
+        <div>
+				<Image src={tiktok} alt="tiktok logo" class=""/>
+        </div>
+        <div>
+				<Image src={x} alt="x logo" class=""/>
+        </div>
+        <div>
+				<Image src={youtube} alt="youtube logo" class=""/>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <p>copyright notice</p>
+    </div>
 </div>
-  
