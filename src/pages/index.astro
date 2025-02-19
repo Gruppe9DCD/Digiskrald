@@ -5,19 +5,24 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import knap from "../assets/images/knap.svg";
-import streg from "../assets/images/streg.svg";
+import bg from "../assets/images/bg.svg";
+import arrow from "../assets/images/Arrow.svg";
+import skraldespand from "../assets/images/skraldespand.svg";
+import round_lines from "../assets/images/round_lines.svg";
+import mellem from "../assets/images/mellem.svg";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Home">
   <body>
-    <section class="mt-32">
-      <article class="ml-90">
-        <div>
-          <Image src={streg} alt="billede" class="ml-30 w-60" />
+    <Image src={bg} alt="green line" class="absolute left-0 w-[70%] h-auto -z-10" />
+
+    <section class="lg:mt-25">
+      <article class="lg:ml-90 ml-30">
+        <div class="">
+          <h1 class="font-bold text-5xl lg:text-8xl">15 MARTS</h1>
         </div>
-        <h1 class="font-bold text-7xl">15 MARTS</h1>
       </article>
-      <article class="font-bold text-right mr-80 text-4xl mt-30">
+      <article class="font-bold text-right lg:mr-60 mr-30 lg:text-7xl text-3xl lg:mt-15 mt-10">
         <h2>DIGITAL</h2>
         <h2>SKRALDE</h2>
         <h2>DAG</h2>
@@ -25,26 +30,27 @@ import streg from "../assets/images/streg.svg";
       </article>
     </section>
     <section>
-      <p class="m-20 mt-20 mr-170 font-light text-xl">
+      <p class="m-20 lg:mt-70 mt-35 lg:mr-170 font-light lg:text-xl">
         Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige
         produktion af omkring 3.625 tons CO2
       </p>
     </section>
-    <section class="grid md:grid-cols-2 mt-32 m-20">
+    <section class="grid lg:grid-cols-2 lg:mt-32 mt-25 m-20 gap-20">
       <div>
-        <h3 class="text-3xl font-bold">Digital skraldedag</h3>
-        <p class="mt-5 mr-40 font-light text-xl">
+        <h3 class="text-4xl font-bold">Digital skraldedag</h3>
+        <p class="mt-5 lg:mr-40 font-light lg:text-xl">
           Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år og organiseret af Let's Do It
           World har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online
           tilstedeværelse.
         </p>
       </div>
       <div class="">
-        <img src="" alt="billede" />
+        <Image src={skraldespand} alt="skraldespand" class="w-[90%] place-self-center" />
       </div>
     </section>
     <section class="mt-32 m-20 place-self-center">
-      <div class="grid md:grid-cols-3 gap-60 font-bold">
+      <Image src={round_lines} alt="round line" class="absolute right-0 lg:w-[15%] w-[23%] h-auto -z-10" />
+      <div class="grid grid-cols-3 lg:gap-60 gap-25 font-bold">
         <article>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-15 place-self-center">
             <path
@@ -76,27 +82,31 @@ import streg from "../assets/images/streg.svg";
     </section>
     <section class="mt-32 m-20 text-center">
       <h3 class="text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
-      <Image src={knap} alt="billede" class="ml-110 w-60 mt-10" />
+      <Image src={knap} alt="billede" class="lg:ml-110 ml-10 w-60 mt-10" />
     </section>
     <section class="mt-32 m-20">
-      <div class="grid md:grid-cols-2 gap-20">
+      <div class="grid lg:grid-cols-2 gap-20">
         <div>
           <h3 class="text-3xl font-bold">FAKTA OM DIGITAL SKRALD</h3>
           <h3 class="text-3xl font-bold mt-3">LÆS MERE</h3>
-
+          <Image src={arrow} alt="pil" class="mt-5" />
+          <Image src={mellem} alt="mellem streg" class="absolute lg:w-[10%] w-[20%] h-auto -z-10 left-0" />
           <p class="mt-5 font-light text-xl">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
+
           <p class="mt-5 font-light text-xl">
             På blot ét år (2007) blev der skabt én zettabyte data på verdensplan. I 2010 var dette fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe én zettabyte data ville man
             have brug for papir fra 20 billioner træer. Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt. (a), (b)
           </p>
+
           <p class="mt-5 font-light text-xl">
             I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver af dem forårsagede produktionen af 1–2 tons CO2. Samme år blev omkring 20 millioner af dem til elektronisk affald.
             (a)
           </p>
+
           <p class="mt-5 font-light text-xl">99 % af al data er blevet skabt inden for de sidste 10 år. (a)</p>
         </div>
         <div>
-          <img src="" alt="billede" />
+          <Image src={skraldespand} alt="skraldespand" class="w-[90%] place-self-center" />
         </div>
       </div>
     </section>
