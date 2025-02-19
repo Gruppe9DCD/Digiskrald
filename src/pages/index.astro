@@ -4,15 +4,20 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import knap from "../assets/images/knap.svg";
+import streg from "../assets/images/streg.svg";
 ---
 
 <MainLayout title="Titel">
   <body>
-    <section>
-      <article>
-        <h1>15 Marts</h1>
+    <section class="mt-32">
+      <article class="ml-90">
+        <div>
+          <Image src={streg} alt="billede" class="ml-30 w-60" />
+        </div>
+        <h1 class="font-bold text-7xl">15 MARTS</h1>
       </article>
-      <article>
+      <article class="font-bold text-right mr-80 text-4xl mt-30">
         <h2>DIGITAL</h2>
         <h2>SKRALDE</h2>
         <h2>DAG</h2>
@@ -20,13 +25,15 @@ import thumbsup from "../assets/images/thumbsup.png";
       </article>
     </section>
     <section>
-      Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige
-      produktion af omkring 3.625 tons CO2
+      <p class="m-20 mt-20 mr-170 font-light text-xl">
+        Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige
+        produktion af omkring 3.625 tons CO2
+      </p>
     </section>
-    <section class="grid md:grid-cols-2">
+    <section class="grid md:grid-cols-2 mt-32 m-20">
       <div>
-        <h3>Digital skraldedag</h3>
-        <p>
+        <h3 class="text-3xl font-bold">Digital skraldedag</h3>
+        <p class="mt-5 mr-40 font-light text-xl">
           Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år og organiseret af Let's Do It
           World har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online
           tilstedeværelse.
@@ -34,6 +41,63 @@ import thumbsup from "../assets/images/thumbsup.png";
       </div>
       <div class="">
         <img src="" alt="billede" />
+      </div>
+    </section>
+    <section class="mt-32 m-20 place-self-center">
+      <div class="grid md:grid-cols-3 gap-60 font-bold">
+        <article>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-15 place-self-center">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+            ></path>
+          </svg>
+          <p class="place-self-center">1,184,747</p>
+          <p class="place-self-center">Deltagere</p>
+        </article>
+        <article>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-15 place-self-center">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"
+            ></path>
+          </svg>
+          <p class="place-self-center">14.5 M BG</p>
+          <p class="place-self-center">Data slettet</p>
+        </article>
+        <article>
+          <p>ikon</p>
+          <p class="place-self-center">14.5 M BG</p>
+          <p class="place-self-center">Data slettet</p>
+        </article>
+      </div>
+    </section>
+    <section class="mt-32 m-20 text-center">
+      <h3 class="text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
+      <Image src={knap} alt="billede" class="ml-110 w-60 mt-10" />
+    </section>
+    <section class="mt-32 m-20">
+      <div class="grid md:grid-cols-2 gap-20">
+        <div>
+          <h3 class="text-3xl font-bold">FAKTA OM DIGITAL SKRALD</h3>
+          <h3 class="text-3xl font-bold mt-3">LÆS MERE</h3>
+
+          <p class="mt-5 font-light text-xl">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
+          <p class="mt-5 font-light text-xl">
+            På blot ét år (2007) blev der skabt én zettabyte data på verdensplan. I 2010 var dette fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe én zettabyte data ville man
+            have brug for papir fra 20 billioner træer. Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt. (a), (b)
+          </p>
+          <p class="mt-5 font-light text-xl">
+            I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver af dem forårsagede produktionen af 1–2 tons CO2. Samme år blev omkring 20 millioner af dem til elektronisk affald.
+            (a)
+          </p>
+          <p class="mt-5 font-light text-xl">99 % af al data er blevet skabt inden for de sidste 10 år. (a)</p>
+        </div>
+        <div>
+          <img src="" alt="billede" />
+        </div>
       </div>
     </section>
   </body>
