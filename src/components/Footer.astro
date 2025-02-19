@@ -8,46 +8,90 @@ import x from "../assets/images/x.svg";
 import youtube from "../assets/images/youtube.svg";
 import logo from "../assets/images/logo.svg";
 ---
-<div class="py-8 w-full mx-auto grid grid-cols-4 text-white bg-amber-400">
-    <div class="grid grid-cols-3 justify-items-center pb-8 w-3xs">
-        <div>
-				  <Image src={facebook} alt="facebook logo" class=""/>
-        </div>
-       <div>
-				  <Image src={instagram} alt="instagram logo" class=""/>
-        </div>
-        <div>
-				  <Image src={ind} alt="linkedin logo" class=""/>
-        </div>
-        <div>
-				  <Image src={tiktok} alt="tiktok logo" class=""/>
-        </div>
-        <div>
-				  <Image src={x} alt="x logo" class=""/>
-        </div>
-        <div>
-				  <Image src={youtube} alt="youtube logo" class=""/>
+
+<div class="w-full mx-auto px-6 sm:px-12 pt-8 pb-8 grid grid-cols-1 sm:grid-cols-3 gap-8 text-lime-100 bg-lime-950/70 text-center sm:text-left mt-auto">
+    
+    <!-- Sociale medier ikoner -->
+    <div class="flex flex-col items-center sm:items-start">
+        <div class="grid grid-cols-3 sm:grid-cols-3 gap-3 w-24 sm:w-32">
+            <Image src={facebook} alt="facebook logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
+            <Image src={instagram} alt="instagram logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
+            <Image src={ind} alt="linkedin logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
+            <Image src={tiktok} alt="tiktok logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
+            <Image src={x} alt="x logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
+            <Image src={youtube} alt="youtube logo" class="w-8 h-8 sm:w-10 sm:h-10"/>
         </div>
 
-        <section>
-           <p>Let's Do It World NGO<br><br>Roosikrantsi 3, TALLINN 10119, Estonia<br>Reg. code - 80562203<br><br>digital@ldiw.org</p>
+        <section class="pt-6 text-sm sm:text-base">
+           <p>Let's Do It World NGO<br>Roosikrantsi 3, TALLINN 10119, Estonia<br>Reg. code - 80562203<br>digital@ldiw.org</p>
+        </section>
+    </div>
+
+    <!-- Links sektion (centreret) -->
+    <section class="text-center flex flex-col items-center justify-center">
+        <ul class="text-lg font-bold">
+            <li class="pt-4"><a href="https://www.worldcleanupday.org/blog">Blog</a></li>
+            <li class="pt-4"><a href="https://trello.com/b/YzROvY3M/digital-cleanup-day">Marketing Materials</a></li>
+            <li class="pt-4"><a href="https://drive.google.com/file/d/1a0sgGo1n8edioZ4Itm6DNqTPlmKWGfTj/view">Constitution</a></li>
+            <li class="pt-4"><a href="https://www.worldcleanupday.org/get-involved">Join The Movement</a></li>
+        </ul>
+    </section>
+
+    <!-- Logo + Copyright -->
+    <div class="flex flex-col items-center sm:items-end">
+        <Image src={logo} alt="digi logo" class="w-16 sm:w-24"/>
+        <div class="pt-6">
+            <p class="text-sm">Copyright Notice</p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- <div class="w-full mx-auto px-18 pt-8 grid grid-cols-3 gap-75 text-lime-100 bg-lime-950/70">
+    <div>
+      <div class="grid grid-cols-3 gap-3 w-3xs">
+          <div>
+            <Image src={facebook} alt="facebook logo" class=""/>
+          </div>
+        <div>
+            <Image src={instagram} alt="instagram logo" class=""/>
+          </div>
+          <div>
+            <Image src={ind} alt="linkedin logo" class=""/>
+          </div>
+          <div>
+            <Image src={tiktok} alt="tiktok logo" class=""/>
+          </div>
+          <div>
+            <Image src={x} alt="x logo" class=""/>
+          </div>
+          <div>
+            <Image src={youtube} alt="youtube logo" class=""/>
+          </div>
+      </div>
+
+        <section class="pt-8">
+           <p>Let's Do It World NGO<br>Roosikrantsi 3, TALLINN 10119, Estonia<br>Reg. code - 80562203<br>digital@ldiw.org</p>
         </section>
     </div>
 
     <section>
-      <a href="https://www.worldcleanupday.org/blog">Blog</a>
-      <a href="https://trello.com/b/YzROvY3M/digital-cleanup-day">Marketing Materials</a>
-      <a href="https://drive.google.com/file/d/1a0sgGo1n8edioZ4Itm6DNqTPlmKWGfTj/view">Constitution</a>
-      <a href="https://www.worldcleanupday.org/get-involved">Join The Movement</a>
+      <ul class="text-center text-lg font-bold">
+          <li class="pt-6"><a href="https://www.worldcleanupday.org/blog">Blog</a></li>
+          <li class="pt-6"><a href="https://trello.com/b/YzROvY3M/digital-cleanup-day">Marketing Materials</a></li>
+          <li class="pt-6"><a href="https://drive.google.com/file/d/1a0sgGo1n8edioZ4Itm6DNqTPlmKWGfTj/view">Constitution</a></li>
+          <li class="pt-6"><a href="https://www.worldcleanupday.org/get-involved">Join The Movement</a></li>
+      </ul>
     </section>
 
-    <div>
+    <div class="justify-items-end">
       <div>
         	<Image src={logo} alt="digi logo" class=""/>
       </div>
 
-      <div class="flex justify-center">
-        <p>copyright notice</p>
+      <div class="pt-8">
+        <p>Copyright Notice</p>
       </div>
     </div>
-</div>
+</div> -->
