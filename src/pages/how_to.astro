@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import bg from "../assets/images/bg.svg";
 import round_lines from "../assets/images/round_lines.svg";
 import paper from "../assets/images/paper.webp";
@@ -8,44 +8,61 @@ import paper from "../assets/images/paper.webp";
 
 <MainLayout title="How to">
   <body>
-    <Image src={bg} alt="green line" class=" mt-15 absolute left-0 w-[70%] h-auto -z-10" />
+    <Image src={bg} alt="green line" class="mt-15 absolute left-0 w-[70%] h-auto -z-10" />
 
     <section class="text-center lg:pt-60">
-        <h2 class="text-2xl lg:text-6xl font-bold">KOM IGANG MED DIN OPRYDNING</h2>
-        <h1 class="text-6xl lg:text-[9.5rem] font-bold">GUIDE TIL DIG</h1>
+      <h2 class="text-2xl lg:text-6xl font-bold">KOM IGANG MED DIN OPRYDNING</h2>
+      <h1 class="text-6xl lg:text-[9.5rem] font-bold">GUIDE TIL DIG</h1>
     </section>
 
     <section class="mx-10 mt-80 lg:mt-150">
-        <div class="grid lg:grid-cols-2 gap-30">
-            <div>
-                <h2 class="text-6xl font-bold">STEP 1</h2>
-                <h3 class="text-4xl font-bold">Ryd op  på din mobil</h3>
-                <p class="pt-4">Fjern alle apps, som du ikke har brugt i et stykke tid, eller kun har brugt et par gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps og spil, som du har downloadet, men aldrig rigtig prøvet.<br><br>Chancerne for, at du pludselig begynder at bruge dem, er små! De forbruger energi, selv når de ikke er i brug, og kan bruge hundredvis af megabytes på månedlige opdateringer.
-                <br><br>Husk også at slette gamle brugerkonti (inklusive e-mails) og tilhørende data, som du oprettede, da du var 15, men ikke har tilgået i et årti eller mere! Det vil gøre din telefon hurtigere og forbedre batteriets levetid. Det er altid en fordel kun at have de nødvendige apps.<br><br>Gennemgå dine fotos og videoer. Ved at slette de unødvendige og eventuelle dubletter kan du frigøre adskillige gigabyte værdifuld lagerplads. Se vejledningen for, hvordan du rydder op på din smartphone og tablet.</p>
-            </div>
-
-            <div>
-                <h2 class="text-6xl font-bold">STEP 2</h2>
-                <h3 class="text-4xl font-bold">Ryd op  på din PC</h3>
-                <p class="pt-4">Ryd op på din personlige computer, og slet filer, der er dubletter eller ikke længere er nyttige. Gennemgå alle dine billeder, og slet dubletter samt slørede fotos. Tjek dine videofiler, og slet dem, du allerede har set, eller som ikke længere er nødvendige. Arkivér de vigtige filer.<br>Vær forberedt på at finde virkelig fantastiske ting på din computer! Se vejledningen for, hvordan du rydder op på din computer og harddisk.</p>        
-                <Image src={paper} alt="paper icons" class="" />
-            </div>
-
-            <div>
-                <h2 class="text-6xl font-bold">STEP 3</h2>
-                <h3 class="text-4xl font-bold">Ryd op på din mail</h3>
-                <p class="pt-4">Filtrér dine e-mails efter de ældste, og arkivér dem. Afmeld nyhedsbreve, som du alligevel ikke læser. Vælg lange samtaler, behold den nyeste, og slet resten! Søg efter almindelige navne, adresser og ord for at samle lignende e-mails, så du kan håndtere dem samlet.<br><br>Vær modig og tryk på slet-knappen! Se vejledningen for, hvordan du rydder op i din indbakke.</p>        
-            </div>
-        
-            <div>
-                <h2 class="text-6xl font-bold">STEP 4</h2>
-                <h3 class="text-4xl font-bold">Lav nye Regler</h3>
-                <p class="pt-4">I stedet for at sende e-mails, brug flere co-working steder. Stop med at sende "ok" og "tak" e-mails! Opbevar vigtige filer ét sted i skyen, så der ikke er behov for at gemme den samme fil på alle computere. Tænk dig om, før du laver backup. Skab mindre "hurtigt indhold" og vær mere bevidst om dine videoer og billeder. Sørg for kun at tage backup af de filer, du virkelig har brug for, og kun de billeder, du elsker.<br><br>Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, reducere kvaliteten af streamingtjenester, mindske spilletid, begrænse tid på sociale medier og afmelde nyhedsbreve samt e-maillister, kan markant reducere dit miljøaftryk!</p>        
-            </div>
+      <div class="grid lg:grid-cols-2 gap-30">
+        <div>
+          <h2 class="text-6xl font-bold">STEP 1</h2>
+          <h3 class="text-4xl font-bold">Ryd op på din mobil</h3>
+          <p class="pt-4 font-light">
+            Fjern alle apps, som du ikke har brugt i et stykke tid, eller kun har brugt et par gange. Vær ærlig og modig! Slet alle de unødvendige, glemte, gamle apps og spil, som du har downloadet,
+            men aldrig rigtig prøvet.<br /><br />Chancerne for, at du pludselig begynder at bruge dem, er små! De forbruger energi, selv når de ikke er i brug, og kan bruge hundredvis af megabytes på
+            månedlige opdateringer.
+            <br /><br />Husk også at slette gamle brugerkonti (inklusive e-mails) og tilhørende data, som du oprettede, da du var 15, men ikke har tilgået i et årti eller mere! Det vil gøre din
+            telefon hurtigere og forbedre batteriets levetid. Det er altid en fordel kun at have de nødvendige apps.<br /><br />Gennemgå dine fotos og videoer. Ved at slette de unødvendige og
+            eventuelle dubletter kan du frigøre adskillige gigabyte værdifuld lagerplads. Se vejledningen for, hvordan du rydder op på din smartphone og tablet.
+          </p>
         </div>
+
+        <div>
+          <h2 class="text-6xl font-bold">STEP 2</h2>
+          <h3 class="text-4xl font-bold">Ryd op på din PC</h3>
+          <p class="pt-4 font-light">
+            Ryd op på din personlige computer, og slet filer, der er dubletter eller ikke længere er nyttige. Gennemgå alle dine billeder, og slet dubletter samt slørede fotos. Tjek dine videofiler,
+            og slet dem, du allerede har set, eller som ikke længere er nødvendige. Arkivér de vigtige filer.<br />Vær forberedt på at finde virkelig fantastiske ting på din computer! Se vejledningen
+            for, hvordan du rydder op på din computer og harddisk.
+          </p>
+          <Image src={paper} alt="paper icons" class="" />
+        </div>
+
+        <div>
+          <h2 class="text-6xl font-bold">STEP 3</h2>
+          <h3 class="text-4xl font-bold">Ryd op på din mail</h3>
+          <p class="pt-4 font-light">
+            Filtrér dine e-mails efter de ældste, og arkivér dem. Afmeld nyhedsbreve, som du alligevel ikke læser. Vælg lange samtaler, behold den nyeste, og slet resten! Søg efter almindelige navne,
+            adresser og ord for at samle lignende e-mails, så du kan håndtere dem samlet.<br /><br />Vær modig og tryk på slet-knappen! Se vejledningen for, hvordan du rydder op i din indbakke.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-6xl font-bold">STEP 4</h2>
+          <h3 class="text-4xl font-bold">Lav nye Regler</h3>
+          <p class="pt-4 font-light">
+            I stedet for at sende e-mails, brug flere co-working steder. Stop med at sende "ok" og "tak" e-mails! Opbevar vigtige filer ét sted i skyen, så der ikke er behov for at gemme den samme fil
+            på alle computere. Tænk dig om, før du laver backup. Skab mindre "hurtigt indhold" og vær mere bevidst om dine videoer og billeder. Sørg for kun at tage backup af de filer, du virkelig har
+            brug for, og kun de billeder, du elsker.<br /><br />Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, reducere kvaliteten af streamingtjenester, mindske
+            spilletid, begrænse tid på sociale medier og afmelde nyhedsbreve samt e-maillister, kan markant reducere dit miljøaftryk!
+          </p>
+        </div>
+      </div>
     </section>
 
-    <Image src={round_lines} alt="round line" class=" -mt-130 absolute right-0 w-[15%] h-auto -z-10" />
-
+    <Image src={round_lines} alt="round line" class="-mt-130 absolute right-0 w-[15%] h-auto -z-10" />
   </body>
 </MainLayout>

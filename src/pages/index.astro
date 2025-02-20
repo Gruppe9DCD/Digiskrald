@@ -17,13 +17,13 @@ import sky from "../assets/images/sky.svg";
   <body>
     <Image src={bg} alt="green line" class="absolute left-0 w-[70%] h-auto -z-10" />
 
-    <section class="lg:mt-25">
-      <article class="lg:ml-90 ml-30">
+    <section class="lg:mt-22">
+      <article class="lg:ml-40 ml-30">
         <div class="">
-          <h1 class="font-bold text-5xl lg:text-8xl">15 MARTS</h1>
+          <h1 class="font-extrabold text-5xl lg:text-[9.5rem]">15 MARTS</h1>
         </div>
       </article>
-      <article class="font-bold text-right lg:mr-60 mr-30 lg:text-7xl text-3xl lg:mt-15 mt-10">
+      <article class="font-bold text-right lg:mr-40 mr-30 lg:text-7xl text-3xl lg:mt-2 mt-10 lg:leading-21">
         <h2>DIGITAL</h2>
         <h2>SKRALDE</h2>
         <h2>DAG</h2>
@@ -38,7 +38,7 @@ import sky from "../assets/images/sky.svg";
     </section>
     <section class="grid lg:grid-cols-2 lg:mt-32 mt-25 m-20 gap-20">
       <div>
-        <h3 class="text-4xl font-bold">Digital skraldedag</h3>
+        <h3 class="text-4xl font-bold">DIGITAL SKRALDEDAG</h3>
         <p class="mt-5 lg:mr-20 font-light lg:text-xl leading-9">
           Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år og organiseret af Let's Do It
           World har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online
@@ -88,8 +88,12 @@ import sky from "../assets/images/sky.svg";
       </div>
     </section>
     <section class="mt-32 m-20 text-center">
-      <h3 class="text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
-      <Image src={knap} alt="billede" class="lg:ml-110 ml-10 w-60 mt-10" />
+      <h3 class="lg:text-5xl text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
+      <a
+        href="../pages/form.astro"
+        class="bg-[url('knap_baggrund.svg')] hover:bg-[url('baggrund2.svg')] transition-all duration-500 lg:p-15 p-10 bg-contain bg-center bg-no-repeat inline-block lg:text-2xl text-white drop-shadow-lg lg:mt-15 mt-5 font-bold"
+        >REGISTRER DIT CLEANUP</a
+      >
     </section>
     <section class="mt-32 m-20">
       <div class="grid lg:grid-cols-2 gap-20">
