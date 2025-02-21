@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import paper_logo from "../assets/images/paper.webp";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Registrering">
   <div class="gird lg:grid-rows-2">
     <div>
       <form name="kontakt" class="p-30">
@@ -45,6 +45,31 @@ import paper_logo from "../assets/images/paper.webp";
             placeholder="10GB"
             required
           />
+        </div>
+        <div class="mt-6">
+          <p class="font-bold">Yderligere tilvalg</p>
+          <div class="flex flex-col gap-2 mt-2">
+            <label class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="data-type"
+                value="billeder"
+                class="accent-lime-600"
+                required
+              />
+              Jeg stoler på at i behandler mine data indefor GDPR Logivning
+            </label>
+            <label class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="data-type"
+                value="videoer"
+                class="accent-lime-600"
+                required
+              />
+              Meld mig til nyhedsbrevet
+            </label>
+          </div>
         </div>
         <!-- Submit button -->
         <Button />
