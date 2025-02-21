@@ -29,12 +29,12 @@ import mellem from "../assets/images/mellem.svg";
       </article>
     </section>
     <section>
-      <p class="m-20 lg:mt-85 mt-35 lg:mr-170 font-light lg:text-xl leading-9 animate__animated animate__fadeInUp">
+      <p class="m-20 lg:mt-70 mt-35 lg:mr-170 font-light lg:text-xl leading-9 animate__animated animate__fadeInUp">
         Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige
         produktion af omkring 3.625 tons CO2
       </p>
     </section>
-    <section class="grid lg:grid-cols-2 lg:mt-32 mt-25 m-20 gap-20">
+    <section class="grid lg:grid-cols-2 lg:mt-32 mt-25 m-20 gap-20 fadein">
       <div>
         <h3 class="text-4xl font-bold">DIGITAL SKRALDEDAG</h3>
         <p class="mt-5 lg:mr-20 font-light lg:text-xl leading-9">
@@ -49,7 +49,7 @@ import mellem from "../assets/images/mellem.svg";
     </section>
     <section class="mt-32 place-self-center">
       <Image src={round_lines} alt="round line" class="absolute right-0 lg:w-[15%] w-[23%] h-auto -z-10 -mt-60" />
-      <div class="grid grid-cols-3 lg:gap-60 gap-10 font-bold">
+      <div class="grid grid-cols-3 lg:gap-60 gap-10 font-bold fadein2">
         <article>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-17 place-self-center">
             <path
@@ -85,36 +85,85 @@ import mellem from "../assets/images/mellem.svg";
         </article>
       </div>
     </section>
-    <section class="mt-32 m-20 text-center">
+    <section class="mt-32 m-20 text-center fadein3">
       <h3 class="lg:text-5xl text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
       <a
         href="/form"
         class="bg-[url('knap_baggrund.svg')] hover:bg-[url('baggrund2.svg')] transition-all duration-500 lg:p-15 p-10 bg-contain bg-center bg-no-repeat inline-block lg:text-2xl text-white drop-shadow-lg lg:mt-15 mt-5 font-bold"
-        >REGISTRER DIT CLEANUP</a>
+        >REGISTRER DIT CLEANUP</a
+      >
     </section>
     <section class="mt-32 m-20">
       <div class="grid lg:grid-cols-2 gap-20">
         <div>
-          <h3 class="text-3xl font-bold">FAKTA OM DIGITAL SKRALD</h3>
+          <h3 class="text-3xl font-bold fadein4">FAKTA OM DIGITAL SKRALD</h3>
           <Image src={mellem} alt="mellem streg" class="absolute lg:w-[10%] w-[20%] h-auto -z-10 left-0" />
-          <p class="mt-5 font-light text-xl leading-9">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
+          <div class="fadein5">
+            <p class="mt-5 font-light text-xl leading-9">Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år! (a), (b)</p>
 
-          <p class="mt-5 font-light text-xl leading-9">
-            På blot ét år (2007) blev der skabt én zettabyte data på verdensplan. I 2010 var dette fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe én zettabyte data ville man
-            have brug for papir fra 20 billioner træer. Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt. (a), (b)
-          </p>
+            <p class="mt-5 font-light text-xl leading-9">
+              På blot ét år (2007) blev der skabt én zettabyte data på verdensplan. I 2010 var dette fordoblet. I 2035 vil vi skabe mere end 2.000 zettabytes. For at printe én zettabyte data ville man
+              have brug for papir fra 20 billioner træer. Der er kun omkring 3,5 billioner træer tilbage på planeten, så det er ikke muligt. (a), (b)
+            </p>
 
-          <p class="mt-5 font-light text-xl leading-9">
-            I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver af dem forårsagede produktionen af 1–2 tons CO2. Samme år blev omkring 20 millioner af dem til elektronisk affald.
-            (a)
-          </p>
+            <p class="mt-5 font-light text-xl leading-9">
+              I 2022 blev omkring 70 millioner servere brugt til at lagre data. Hver af dem forårsagede produktionen af 1–2 tons CO2. Samme år blev omkring 20 millioner af dem til elektronisk affald.
+              (a)
+            </p>
 
-          <p class="mt-5 font-light text-xl leading-9">99 % af al data er blevet skabt inden for de sidste 10 år. (a)</p>
+            <p class="mt-5 font-light text-xl leading-9">99 % af al data er blevet skabt inden for de sidste 10 år. (a)</p>
+          </div>
         </div>
         <div>
-            <Image src={skraldebunke} alt="skraldebunke" class="w-[90%] place-self-center" format="webp" />
+          <Image src={skraldebunke} alt="skraldebunke" class="w-[90%] place-self-center fadein6" format="webp" />
         </div>
       </div>
     </section>
   </body>
 </MainLayout>
+
+<script>
+  import { inView } from "motion";
+
+  const textFadeIn = document.querySelector(".mitelement");
+
+  inView(textFadeIn, () => {
+    textFadeIn.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn = document.querySelector(".fadein");
+
+  inView(FadeIn, () => {
+    FadeIn.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn2 = document.querySelector(".fadein2");
+
+  inView(FadeIn2, () => {
+    FadeIn2.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn3 = document.querySelector(".fadein3");
+
+  inView(FadeIn3, () => {
+    FadeIn3.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn4 = document.querySelector(".fadein4");
+
+  inView(FadeIn4, () => {
+    FadeIn4.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn5 = document.querySelector(".fadein5");
+
+  inView(FadeIn5, () => {
+    FadeIn5.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  const FadeIn6 = document.querySelector(".fadein6");
+
+  inView(FadeIn6, () => {
+    FadeIn6.classList.add("animate__animated", "animate__fadeInUp");
+  });
+</script>
