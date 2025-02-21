@@ -4,7 +4,7 @@ import digi_logo from "../assets/images/digi_logo.png";
 import logo from "../assets/images/logo.svg";
 ---
 
-<div class="bg-lime-950/70 flex lg:flex-nowrap mx-10 rounded-3xl mt-10">
+<!-- <div class="bg-lime-950/70 flex lg:flex-nowrap mx-10 rounded-3xl mt-10">
   <div class="m-4 lg:scale-75 scale-50 lg:mr-200 mr-20">
     <Image src={logo} alt="" />
   </div>
@@ -15,5 +15,16 @@ import logo from "../assets/images/logo.svg";
     <a href="../pages/how_to.astro" class="lg:text-2xl font-bold text-lime-100"
       >How To</a
     >
+  </div>
+</div> -->
+<div
+  class="bg-lime-950/70 flex justify-between items-center p-6 m-10 rounded-3xl"
+>
+  <div class="">
+    <Image src={logo} alt="" class="h-16" />
+  </div>
+  <div class="text-lime-100 lg:text-2xl font-bold lg:ml-10">
+    <a href="#" class="mr-20">Hjem</a>
+    <a href="../pages/how_to.astro" class="">How To</a>
   </div>
 </div>
