@@ -3,17 +3,15 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 import knap from "../assets/images/knap.svg";
 import bg from "../assets/images/bg.svg";
-import arrow from "../assets/images/Arrow.svg";
 import skraldespand from "../assets/images/skraldespand.svg";
+import skraldebunke from "../assets/images/skraldebunke.jpg";
 import round_lines from "../assets/images/round_lines.svg";
 import mellem from "../assets/images/mellem.svg";
-import sky from "../assets/images/sky.svg";
 ---
 
-<MainLayout title="Home">
+<MainLayout title="Forside">
   <body>
     <Image src={bg} alt="green line" class="absolute left-0 w-[70%] h-auto -z-10" />
 
@@ -31,7 +29,7 @@ import sky from "../assets/images/sky.svg";
       </article>
     </section>
     <section>
-      <p class="m-20 lg:mt-70 mt-35 lg:mr-170 font-light lg:text-xl leading-9 animate__animated animate__fadeInUp">
+      <p class="m-20 lg:mt-85 mt-35 lg:mr-170 font-light lg:text-xl leading-9 animate__animated animate__fadeInUp">
         Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige
         produktion af omkring 3.625 tons CO2
       </p>
@@ -90,10 +88,9 @@ import sky from "../assets/images/sky.svg";
     <section class="mt-32 m-20 text-center">
       <h3 class="lg:text-5xl text-3xl font-bold">VÆR MED TIL AT GØRE EN FORSKEL</h3>
       <a
-        href="../pages/form.astro"
+        href="/form"
         class="bg-[url('knap_baggrund.svg')] hover:bg-[url('baggrund2.svg')] transition-all duration-500 lg:p-15 p-10 bg-contain bg-center bg-no-repeat inline-block lg:text-2xl text-white drop-shadow-lg lg:mt-15 mt-5 font-bold"
-        >REGISTRER DIT CLEANUP</a
-      >
+        >REGISTRER DIT CLEANUP</a>
     </section>
     <section class="mt-32 m-20">
       <div class="grid lg:grid-cols-2 gap-20">
@@ -115,7 +112,7 @@ import sky from "../assets/images/sky.svg";
           <p class="mt-5 font-light text-xl leading-9">99 % af al data er blevet skabt inden for de sidste 10 år. (a)</p>
         </div>
         <div>
-          <Image src={skraldespand} alt="skraldespand" class="w-[90%] place-self-center lg:mt-10" />
+            <Image src={skraldebunke} alt="skraldebunke" class="w-[90%] place-self-center" format="webp" />
         </div>
       </div>
     </section>

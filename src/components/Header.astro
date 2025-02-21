@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import digi_logo from "../assets/images/digi_logo.png";
 import logo from "../assets/images/logo.svg";
 ---
 
@@ -18,13 +17,14 @@ import logo from "../assets/images/logo.svg";
   </div>
 </div> -->
 <div
-  class="bg-lime-950/70 flex justify-between items-center p-6 m-10 rounded-3xl"
->
-  <div class="">
-    <Image src={logo} alt="" class="h-16" />
-  </div>
-  <div class="text-lime-100 lg:text-2xl font-bold lg:ml-10">
-    <a href="#" class="mr-20">Hjem</a>
-    <a href="../pages/how_to.astro" class="">How To</a>
-  </div>
+    class="bg-lime-950/70 flex justify-between items-center p-6 m-10 rounded-3xl">
+  
+    <div class="">
+      <a href="/" ><Image src={logo} alt="" class="h-16" /></a>
+    </div>
+
+    <div class="text-lime-100 lg:text-2xl font-bold lg:ml-10">
+      <a href="/" class="mr-20">Forside</a>
+      <a href="/how_to" class="">Guide til dig</a>
+    </div>
 </div>
