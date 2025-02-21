@@ -1,0 +1,48 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Titel">
+  <form name="kontakt" class="p-30">
+    <h2 class="font-bold text-2xl" id="link">Registrer din oprydning</h2>
+    <!-- Full name field -->
+    <div class="grid grid-rows-2 mt-8">
+      <label for="full-name">Fulde navn</label>
+      <input
+        class="border-4 mr-200 rounded-lg"
+        placeholder="fx. Peter Jensen"
+        id="full-name"
+        name="fname"
+        type="text"
+        required
+      />
+    </div>
+    <!-- Email field -->
+    <div class="grid grid-rows-2 mt-4">
+      <label for="email">E-mail</label>
+      <input
+        class="border-4 mr-200 rounded-lg"
+        placeholder="fx. peter@mail.dk"
+        id="email"
+        name="email"
+        type="email"
+        required
+      />
+    </div>
+    <!-- Number of people field -->
+    <div class="grid grid-rows-2 mt-4">
+      <label for="antal">Antal GB fjernet</label>
+      <input
+        class="border-4 mr-200 rounded-lg"
+        id="antal"
+        name="antal"
+        type="number"
+        placeholder="10GB"
+        required
+      />
+    </div>
+    <Button />
+  </form>
+  <!-- Submit button -->
+</MainLayout>
